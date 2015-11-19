@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="br.com.lab6_scrum_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.com.lab6.scrum.model.UsrUsuario</class>
+    <class>br.com.lab6.scrum.model.FunFuncionario</class>
+    <class>br.com.lab6.scrum.model.MedMedico</class>
+    <class>br.com.lab6.scrum.model.ConConsulta</class>
+    <class>br.com.lab6.scrum.model.ProProntuario</class>
+    <class>br.com.lab6.scrum.model.PacPaciente</class>
+    <class>br.com.lab6.scrum.model.AgeAgendamento</class>
+    <class>br.com.lab6.scrum.model.ClaClassificacao</class>
+    <class>br.com.lab6.scrum.model.RecReceita</class>
+    <class>br.com.lab6.scrum.model.TpcTipoConvenio</class>
+    <class>br.com.lab6.scrum.model.TprTipoRisco</class>
+    <class>br.com.lab6.scrum.model.PrePrescricao</class>
+    <class>br.com.lab6.scrum.model.EspEspecialidade</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/scrum"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
