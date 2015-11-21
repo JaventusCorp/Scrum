@@ -33,8 +33,8 @@ public class ConsultaBO {
         return conConsultaDAO.list();
     }
     
-    public ConConsulta buscar(){
-        return conConsultaDAO.find(this);
+    public ConConsulta buscar(Object id){
+        return conConsultaDAO.find(id);
     }
     
 }
