@@ -5,10 +5,36 @@
  */
 package br.com.lab6.scrum.service;
 
+import br.com.lab6.scrum.dao.ConConsultaDAO;
+import br.com.lab6.scrum.model.ConConsulta;
+import java.util.List;
+
 /**
  *
  * @author thiago
  */
 public class ConsultaBO {
+    
+    private ConConsultaDAO conConsultaDAO;
+    
+    public void salvar(ConConsulta conConsulta){
+        conConsultaDAO.save(conConsulta);      
+    }
+    
+    public void deletar(ConConsulta conConsulta){
+        conConsultaDAO.remove(conConsulta);
+    }
+    
+    public void atualizar(ConConsulta conConsulta){
+        conConsultaDAO.update(conConsulta);
+    }
+    
+    public List<ConConsulta> listar(){
+        return conConsultaDAO.list();
+    }
+    
+    public ConConsulta buscar(){
+        return conConsultaDAO.find(this);
+    }
     
 }
