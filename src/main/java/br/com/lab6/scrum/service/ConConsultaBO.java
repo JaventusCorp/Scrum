@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author thiago
  */
-public class ConsultaBO {
+public class ConConsultaBO {
     
     private ConConsultaDAO conConsultaDAO;
     
